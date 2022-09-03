@@ -4,6 +4,7 @@
     --secondary-text-color: #FFFFFF;
     --accent-color: #2196F3;
     --primary-background-color: #F5F5F5;
+    --secondary-background-color: #2F303A;
     --hero-title-color: #FFFFFF;
     --primary-logo-color: #000000;
     --secondary-logo-color: #2196F3;
@@ -45,6 +46,7 @@ body {
 }
 
 .links .logo {
+    color: var(--secondary-text-color);
     letter-spacing: 0.03em;
 }
 
@@ -63,6 +65,7 @@ body {
 .title-name {
     color: var(--title-text-color);
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.19;
 }
 
@@ -75,9 +78,11 @@ body {
     color: var(--hero-title-color);
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
 }
 
 .section.hero {
+    background-color: var(--secondary-background-color);
     letter-spacing: 0.06em;
 }
 
@@ -99,6 +104,7 @@ body {
 }
 
 .portfolio-description {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88; 
 }
@@ -107,6 +113,11 @@ body {
 .links a:focus,
 .address:hover,
 .address:focus {
+    color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
     color: var(--accent-color);
 }
 
@@ -171,4 +182,8 @@ body {
 .contacts:hover,
 .contacts:focus {
     color: var(--accent-color);
+}
+
+.footer {
+    background-color: var(--secondary-background-color);
 }
