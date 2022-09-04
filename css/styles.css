@@ -8,6 +8,7 @@
     --hero-title-color: #FFFFFF;
     --primary-logo-color: #000000;
     --secondary-logo-color: #2196F3;
+    --color-contacts: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -28,11 +29,18 @@ body {
 }
 
 .logo {
-    color: var(--primary-logo-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+
+header .logo {
+    color: var(--primary-logo-color);
+}
+
+footer .logo {
+    color: var(--secondary-text-color);
 }
 
 .logo span {
@@ -46,7 +54,6 @@ body {
 }
 
 .links .logo {
-    color: var(--secondary-text-color);
     letter-spacing: 0.03em;
 }
 
@@ -101,6 +108,10 @@ body {
 
 .list {
     list-style: none;
+}
+
+.list.contacts {
+    color: var(--primary-text-color);
 }
 
 .portfolio-description {
@@ -175,8 +186,17 @@ body {
     font-style: inherit;
 }
 
-.contacts {
+.contacts.link {
     color: var(--color-contacts);
+}
+
+.contacts.link.header {
+    color: var(--primary-text-color);
+}
+
+.contacts.link.header:hover,
+.contacts.link.header:focus {
+    color: var(--accent-color);
 }
 
 .contacts:hover,
